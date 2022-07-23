@@ -16,7 +16,7 @@ export enum searchType {
 export class RestaurantController {
   constructor(private readonly service: RestaurantService) {}
 
-  @Get('all/:opens_at')
+  @Get('all')
   @ApiQuery({ name: 'opens_at', type: Date })
   @ApiOperation({
     summary:
