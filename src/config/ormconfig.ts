@@ -7,7 +7,7 @@ const ormConfig: MysqlConnectionOptions = {
   port: 3306,
   username: 'root',
   password: 'pwd',
-  synchronize: false, // Set to false when deploy to production
+  synchronize: true, // Set to false when deploy to production
   logging: true,
   entities: ['dist/**/**.entity{.ts,.js}'],
 };

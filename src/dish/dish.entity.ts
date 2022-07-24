@@ -17,7 +17,7 @@ export class Dish extends BaseEntity {
   @PrimaryGeneratedColumn('uuid')
   id: string;
 
-  @Column('varchar', { length: 200 })
+  @Column('varchar', { length: 1000 })
   name: string;
 
   @Column('decimal', { precision: 10, scale: 2, unsigned: true })
